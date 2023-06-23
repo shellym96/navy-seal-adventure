@@ -1,3 +1,4 @@
+"""
 #print a welcome message
 print("Welcome to your Navy Seal Adventure!")
 
@@ -5,7 +6,7 @@ print("Choose one of the two options:")
 option = input("Press 'i' for instructions or 's' to start the game.")
 
 """
-explaining the rules of the game by instructions when user presses i on keyboard
+#explaining the rules of the game by instructions when user presses i on keyboard
 """
 if (option == "i"):
     print("Here is your instructions")
@@ -60,3 +61,64 @@ def main():
 
     acceptPosition = input("")
     terminateOrSafe = input("")
+    """
+
+from simple_term_menu import TerminalMenu 
+
+def end_of_game():
+    print("You have been discharged for not following orders. Return to the home page with the option to play again.")
+
+    
+def congratulations_commander():
+    print("Congratulations, you've been offered to be the Commanding Officer of this mission.\n Do you accept this position?")
+    options = ['1. yes', '2. no']
+    main_menu = TerminalMenu(options)
+    options_index = main_menu.show()
+    options_choice = options[options_index]
+    if options_choice == '1. yes':
+
+        attacked()
+        
+    else:
+        third_ques()
+
+
+
+def question_one():
+    print("You're being sent for deployment to Afghanistan. Do you leave you're family and risk your life?") 
+    options = ['1. yes', '2. no']
+    main_menu = TerminalMenu(options)
+    options_index = main_menu.show()
+    options_choice = options[options_index]
+    if options_choice == '1. yes':
+
+        congratulations_commander()
+        
+    else:
+        end_of_game()
+
+def print_instructions():
+    print("Here is your instructions")
+
+
+def start_game():
+    print("The game is beginning... \n")
+    name = input("Enter your name here: \n")
+    print("Hello, " + name + " let's begin \n")
+    question_one()
+
+
+def main():
+    print("Welcome to your Navy Seal Adventure!")
+    print("Choose one of the two options:")
+    options = ['1. instructions', '2. start the game']
+    main_menu = TerminalMenu(options)
+    options_index = main_menu.show()
+    options_choice = options[options_index]
+    if options_choice == '1. instructions':
+
+        print_instructions()
+    else:
+        start_game()
+
+main()
