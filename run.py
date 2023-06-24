@@ -111,7 +111,16 @@ def terminate():
 
 def accepted_position():
     print("The enemy just stumbled upon your location and the op is compromised. Do you yes let the enemy go safely or no terminate?")
+    options = ['1. yes', '2. no']
+    main_menu = TerminalMenu(options)
+    options_index = main_menu.show()
+    options_choice = options[options_index]
+    if options_choice == '1. yes':
 
+       go_safely()
+        
+    else:
+        terminate()
 
 def denied_poistion():
     print("The enemy has came upon your location and the op is compromised. Your commanding officer orders you to terminate the enemy. Do you obey your orders?")
