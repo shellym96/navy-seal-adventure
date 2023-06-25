@@ -29,7 +29,7 @@ def denied_go_safely_():
     else:
         plead_the_fifth()
 
-        
+
 def stay_at_compound():
     print("After deciding to stay, you soon realised it was the right decision. After working another 6 months over seas, you were offered a position to be a Commanding  Officer yet again. You return home to your family as a Commanding Officer. CONGRATULATIONS You have won the game!")
 
@@ -144,7 +144,7 @@ def question_one():
         end_of_game()
 
 def print_instructions():
-    print("Here is your instructions")
+    print("In order to play this game you simply need to use your UP and DOWN arrows, typically located on the bottom right of your keyboard. follow along with the questions asked. Answer the questions that come up then answer with the yes and no using the arrows, then see if you have what it takes to be a Commanding Officer in the Navy Seals!")
 
 
 def start_game():
