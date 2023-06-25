@@ -11,8 +11,12 @@ def retaliation():
 def plead_the_fifth():
     print("Pleading the fifth is definitely saying your guilty without saying your guilty. Straight away you are sent home and fired. You now work in starbucks. GAME OVER!")
 
-    
+
 def denied_terminate():
+    print("You disobeyed you're orders to terminate the enemy. In doing so the enemy gain on you and your men, 100 armed soliders come from every angle and attack. Your entire team are killed but you live. You arrive home injured but alive and the guilt eats you. You decide to never return to the Navy. There for GAME OVER.")
+def 
+
+def denied_go_safely_():
     print("You obyed your orders from your Commander and terminated the enemy. This is in complete violation with the rules of engagement. Do you lie and tell the head officer that your termination of the enemy was purely retaliation?")
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
@@ -25,10 +29,7 @@ def denied_terminate():
     else:
         plead_the_fifth()
 
-
-def denied_go_safely_():
-    print("You disobeyed you're orders to terminate the enemy. In doing so the enemy gain on you and your men, 100 armed soliders come from every angle and attack. Your entire team are killed but you live. You arrive home injured but alive and the guilt eats you. You decide to never return to the Navy. There for GAME OVER.")
-
+        
 def stay_at_compound():
     print("After deciding to stay, you soon realised it was the right decision. After working another 6 months over seas, you were offered a position to be a Commanding  Officer yet again. You return home to your family as a Commanding Officer. CONGRATULATIONS You have won the game!")
 
@@ -56,7 +57,7 @@ def evacuate_position():
     print("You evacuate position, 100 men are gaining on you quickly, you aren't quick enough. You end up having to fight in their forests where they have the advantage. You being Commander of this op, have failed! You and your team don't make it. GAME OVER!")
 
 def stay_and_fight():
-    print("You chose to stay and fight. Taking the right steps to call air-support gives yous an advantage. You take out most of the enemy and the air-support does the rest. You and you team arrive home injured but safe. Although your injuries lead to you having to have both legs amputated which leads to you never return to the Navy. You will never again be called Commanding again. GAME OVER!")
+    print("You chose to stay and fight. Taking the right steps to call air-support gives yous an advantage. You take out most of the enemy and the air-support does the rest. You and you team arrive home injured but safe. Although your injuries lead to you having to have both legs amputated which leads to you never return to the Navy. You will never again be called Commander again. GAME OVER!")
     
 
 def go_safely():
