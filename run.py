@@ -14,7 +14,6 @@ def plead_the_fifth():
 
 def denied_terminate():
     print("You disobeyed you're orders to terminate the enemy. In doing so the enemy gain on you and your men, 100 armed soliders come from every angle and attack. Your entire team are killed but you live. You arrive home injured but alive and the guilt eats you. You decide to never return to the Navy. There for GAME OVER.")
-def 
 
 def denied_go_safely_():
     print("You obyed your orders from your Commander and terminated the enemy. This is in complete violation with the rules of engagement. Do you lie and tell the head officer that your termination of the enemy was purely retaliation?")
