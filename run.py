@@ -217,7 +217,7 @@ then leading them to yet another question.
 """
 def congratulations_commander():
     print("Congratulations, you've been offered to" +
-    "be the Commanding Officer of this" +
+    " be the Commanding Officer of this" +
     " mission. Do you accept this position? \n")
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
