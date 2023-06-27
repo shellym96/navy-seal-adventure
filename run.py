@@ -30,7 +30,8 @@ def denied_go_safely_():
 
 
 def stay_at_compound():
-    print("After deciding to stay, you soon realised it was the right decision. After working another 6 months over seas, you were offered a position to be a Commanding  Officer yet again. You return home to your family as a Commanding Officer. CONGRATULATIONS You have won the game!")
+    print("After deciding to stay, you soon realised it was the right decision. After working another 6 months over seas, you were offered a position to be a Commanding  Officer yet again. You return home to your family as a Commanding Officer.")
+    print("CONGRATULATIONS!! You have won the game!")
 
 def bring_me_home():
     print("Choosing to go home by spite of being striped of your title, leads you to then be discharged from the Navy. You now work in Starbucks. GAME OVER! \n")
