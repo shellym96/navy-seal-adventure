@@ -1,5 +1,4 @@
 from simple_term_menu import TerminalMenu
-import colorama
 from colorama import Fore, Back, Style
 colorama.init()
 
