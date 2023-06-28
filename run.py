@@ -3,41 +3,45 @@ import colorama
 from colorama import Fore, Back, Style
 colorama.init()
 
+
+def end_of_game():
 """ 
-This fucntion presents the user with their outcome of the game. 
+This function presents the user with their outcome of the game. 
 This lets them know their fate, and that the game is over.
 """
-def end_of_game():
     print('\033[32m' + "You have been discharged for not " +
     "following orders. Return to the home page " +
     "with the option to play again. \n")
 
+
+def retaliation():
 """ 
-This fucntion presents the user with their outcome of the game. 
+This function presents the user with their outcome of the game. 
 This lets them know their fate, and that the game is over.
 """
-def retaliation():
     print('\033[32m' + "You lie to cover your back and say it was" +
     " relatiation that made you termiate" +
     " the enemy. There is an investigation launched" +
     " and for this reason you have been" +
     " discharged. GAME OVER. \n")
 
+
+def plead_the_fifth():
 """ 
-This fucntion presents the user with their outcome of the game. 
+This function presents the user with their outcome of the game. 
 This lets them know their fate, and that the game is over.
 """
-def plead_the_fifth():
     print('\033[32m' + "Pleading the fifth is definitely saying" +
     " your guilty without saying your guilty." +
     " Straight away you are sent home and fired." +
     " You now work in starbucks. GAME OVER!\n")
 
+
+def denied_terminate():
 """ 
-This fucntion presents the user with their outcome of the game. 
+This function presents the user with their outcome of the game. 
 This lets them know their fate, and that the game is over.
 """
-def denied_terminate():
     print('\033[32m' + "You disobeyed you're orders to terminate" +
     " the enemy. In doing so the enemy gain on you and" +
     " your men, 100 armed soliders come from every angle" +
@@ -46,11 +50,12 @@ def denied_terminate():
     " you. You decide to never return to the Navy." +
     " There for GAME OVER. \n")
     
+
+def denied_go_safely_():
 """ 
 This function presents the user with a question, with yes or no answers 
 then leading them to yet another question.
 """
-def denied_go_safely_():
     print('\033[32m' + "You obyed your orders from your Commander and" + 
     " terminated the enemy. This is in complete violation" +
     " with the rules of engagement. Do you lie and tell" +
@@ -66,11 +71,12 @@ def denied_go_safely_():
     else:
         plead_the_fifth()
 
+
+def stay_at_compound():
 """ 
-This fucntion congratulates the user for their win on successfully
+This function congratulates the user for their win on successfully
 completing the game, resulting in the win.
 """
-def stay_at_compound():
     print('\033[32m' + "After deciding to stay, you soon realised" +
     " it was the right decision. After working another 6 months" +
     " over seas, you were offered a position to be a Commanding" +
@@ -78,30 +84,33 @@ def stay_at_compound():
     " a Commanding Officer.")
     print("CONGRATULATIONS!! You have won the game!")
 
+
+def bring_me_home():
 """ 
-This fucntion presents the user with their outcome of the game. 
+This function presents the user with their outcome of the game. 
 This lets them know their fate, and that the game is over.
 """
-def bring_me_home():
     print('\033[32m' + "Choosing to go home by spite of being striped" +
     " of your title, leads you to then" +
     " be discharged from the Navy. You now work" +
     " in Starbucks. GAME OVER! \n")
 
+
+def tell_a_lie():
 """ 
-This fucntion presents the user with their outcome of the game. 
+This function presents the user with their outcome of the game. 
 This lets them know their fate, and that the game is over.
 """
-def tell_a_lie():
     print('\033[32m' + "One of your team mates told the head of" +
     " operations that you attacked first. You have been" +
     " given a Military Discharge and sent home. GAME OVER! \n")
 
+
+def tell_the_truth():
 """ 
 This function presents the user with a question, with yes or no answers 
 then leading them to yet another question.
 """
-def tell_the_truth():
     print('\033[32m' + "You didn't lie and your honesty for the protection" +
     " of your men stopped you from being fired, but you are" +
     " striped of your title. Do you stay at the compound? \n")
@@ -115,22 +124,24 @@ def tell_the_truth():
     else:
         bring_me_home()
 
+
+def evacuate_position():
 """ 
-This fucntion presents the user with their outcome of the game. 
+This function presents the user with their outcome of the game. 
 This lets them know their fate, and that the game is over.
 """
-def evacuate_position():
     print('\033[32m' + "You evacuate position, 100 men are gaining on you quickly," +
     " you aren't quick enough you end up having to fight in their" +
     " forests where they have the advantage. You being" +
     " Commander of this op, have failed! You and your team" +
     " don't make it. GAME OVER! \n")
 
+
+def stay_and_fight():
 """ 
-This fucntion presents the user with their outcome of the game. 
+This function presents the user with their outcome of the game. 
 This lets them know their fate, and that the game is over.
 """
-def stay_and_fight():
     print('\033[32m' + "You chose to stay and fight. Taking the right steps to" +
     " call air-support gives yous an advantage. You take out most" +
     " of the enemy and the air-support does the rest. You and you" +
@@ -139,11 +150,12 @@ def stay_and_fight():
     " you never return to the Navy. You will never" +
     " again be called Commander again. GAME OVER! \n")
 
+
+def go_safely():
 """ 
 This function presents the user with a question, with yes or no answers 
 then leading them to yet another question.
 """
-def go_safely():
     print('\033[32m' + "You chose to let the enemy go safely." +
     "They have told their army where you are" +
     " hiding and 100 armed soldiers are on their way" +
@@ -159,11 +171,12 @@ def go_safely():
     else:
         stay_and_fight()
 
+
+def terminate():
 """ 
 This function presents the user with a question, with yes or no answers 
 then leading them to yet another question.
 """
-def terminate():
     print('\033[32m' + "You terminated the enemy which is in" +
     " violation with rules of engagement." +
     " Do you lie and say they attacked you and your team first? \n")
@@ -177,11 +190,12 @@ def terminate():
     else:
         tell_the_truth()
 
+
+def accepted_position():
 """ 
 This function presents the user with a question, with yes or no answers 
 then leading them to yet another question.
 """
-def accepted_position():
     print('\033[32m' + "The enemy just stumbled upon your" +
     " location and the op is compromised." +
     " Do you yes let the enemy go safely or no terminate? \n")
@@ -195,11 +209,12 @@ def accepted_position():
     else:
         terminate()
 
+
+def denied_poistion():
 """ 
 This function presents the user with a question, with yes or no answers 
 then leading them to yet another question.
 """
-def denied_poistion():
     print('\033[32m' + "The enemy has came upon your location" +
     " and the op is compromised." +
     " Your commanding officer orders you to terminate" +
@@ -214,11 +229,12 @@ def denied_poistion():
     else:
         denied_terminate()
 
+
+def congratulations_commander():
 """ 
 This function presents the user with a question, with yes or no answers 
 then leading them to yet another question.
 """
-def congratulations_commander():
     print('\033[32m' + "Congratulations, you've been offered to" +
     " be the Commanding Officer of this" +
     " mission. Do you accept this position? \n")
@@ -232,14 +248,15 @@ def congratulations_commander():
     else:
         denied_poistion()
 
+
+def question_one():
 """ 
 This function brings the user to the first question with yes or no answers,
 leading to the next question.
 """
-def question_one():
     print('\033[32m' + "You're being sent for deployment to Afghanistan." +
     " Do you leave your family and risk your life? \n")
-    options = ['1. yes', '2. no']
+    options = ['\033[32m' + '1. yes', '2. no']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
     options_choice = options[options_index]
@@ -249,8 +266,9 @@ def question_one():
     else:
         end_of_game()
 
-"""This function will explain the instructions to the user """
+
 def print_instructions():
+""" This function will explain the instructions on how to play the game to the user """
     print('\033[32m' + "In order to play this game you simply" +
     "need to use your UP and DOWN arrows," +
     "typically located on the bottom right of your" +
@@ -260,22 +278,24 @@ def print_instructions():
     " then see if you have what it takes to be a Commanding" +
     " Officer in the Navy Seals! \n")
 
-""" This function will ask the user for their name and then the game will begin to start"""
+
 def start_game():
+""" This function will ask the user for their name and then the game will begin to start"""
     print('\033[32m' + "The game is beginning... \n")
     name = input('\033[32m' + "Enter your name here: \n")
     print('\033[32m' + "Hello, " + name + " let's begin \n")
     question_one()
 
+
+def main():
 """
 This function will greet the user to the game with a title,
 It will give the user the option of 2 choices with instructions or to start the game,
 If they choose the instructions option they will be given another option to go back and begin the game.
 """
-def main():
     print('\033[32m' + "Welcome to your Navy Seal Adventure!")
     print("Choose one of the two options:")
-    options = ['1. instructions', '2. start the game']
+    options = ['\033[32m' + '1. instructions', '2. start the game']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
     options_choice = options[options_index]
