@@ -1,6 +1,5 @@
 from simple_term_menu import TerminalMenu
 from colorama import Fore, Back, Style
-colorama.init()
 
 
 def end_of_game():
@@ -11,6 +10,15 @@ def end_of_game():
     print('\033[32m' + "You have been discharged for not " +
     "following orders. Return to the home page " +
     "with the option to play again. \n")
+
+
+def go_back():
+    options =['Go back',]
+    main_menu = TerminalMenu(options)
+    options_index = main_menu.show()
+    options_choice = options[options_index]
+    if options_choice == 'Go back':
+        main()
 
 
 def retaliation():
@@ -255,7 +263,7 @@ def question_one():
     """
     print('\033[32m' + "You're being sent for deployment to Afghanistan." +
     " Do you leave your family and risk your life? \n")
-    options = ['\033[32m' + '1. yes', '2. no']
+    options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
     options_choice = options[options_index]
@@ -269,13 +277,20 @@ def question_one():
 def print_instructions():
     """ This function will explain the instructions on how to play the game to the user """
     print('\033[32m' + "In order to play this game you simply" +
-    "need to use your UP and DOWN arrows," +
-    "typically located on the bottom right of your" +
+    " need to use your UP and DOWN arrows," +
+    " typically located on the bottom right of your" +
     " keyboard. follow along with the questions" +
     " asked. Answer the questions that come up then answer" +
     " with the yes and no using the arrows," +
     " then see if you have what it takes to be a Commanding" +
     " Officer in the Navy Seals! \n")
+    options = ['1. Go back']
+    main_menu = TerminalMenu(options)
+    options_index = main_menu.show()
+    options_choice = options[options_index]
+    if options_choice == '1. Start game':
+
+        start_game()
 
 
 def start_game():
@@ -294,7 +309,7 @@ def main():
     """
     print('\033[32m' + "Welcome to your Navy Seal Adventure!")
     print("Choose one of the two options:")
-    options = ['\033[32m' + '1. instructions', '2. start the game']
+    options = ['1. instructions', '2. start the game']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
     options_choice = options[options_index]
