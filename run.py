@@ -8,7 +8,7 @@ def end_of_game():
     This lets them know their fate, and that the game is over.
     """
     print(Fore.GREEN  + "You have been discharged for not "
-    "following orders. Return to the home page "
+    "following orders.\n Return to the home page "
     "with the option to play again. \n")
     def go_back():
         options =['Go back',]
@@ -33,11 +33,11 @@ def retaliation():
     This function presents the user with their outcome of the game. 
     This lets them know their fate, and that the game is over.
     """
-    print(Fore.GREEN  + "You lie to cover your back and say it was"
-    " relatiation that made you termiate"
-    " the enemy. There is an investigation launched"
-    " and for this reason you have been"
-    " discharged.\n")
+    print(Fore.GREEN  + "You lie to cover your back and say it was "
+    "relatiation that made you termiate "
+    "the enemy.\n There is an investigation launched "
+    "and for this reason you have been "
+    "discharged.\n")
     print("GAME OVER!")
 
 
@@ -46,10 +46,10 @@ def plead_the_fifth():
     This function presents the user with their outcome of the game. 
     This lets them know their fate, and that the game is over.
     """
-    print(Fore.GREEN  + "Pleading the fifth is definitely saying"
-    " your guilty without saying your guilty."
-    " Straight away you are sent home and fired."
-    " You now work in starbucks.\n")
+    print(Fore.GREEN  + "Pleading the fifth is definitely saying "
+    "your guilty without saying your guilty.\n "
+    "Straight away you are sent home and fired."
+    "You now work in starbucks.\n")
     print("GAME OVER!")
 
 
@@ -58,12 +58,12 @@ def denied_terminate():
     This function presents the user with their outcome of the game. 
     This lets them know their fate, and that the game is over.
     """
-    print(Fore.GREEN  + "You disobeyed you're orders to terminate"
-    " the enemy. In doing so the enemy gain on you and"
-    " your men, 100 armed soliders come from every angle"
-    " and attack. Your entire team are killed but you live."
-    " You arrive home injured but alive and the guilt eats"
-    " you. You decide to never return to the Navy. \n")
+    print(Fore.GREEN  + "You disobeyed you're orders to terminate "
+    "the enemy.\n In doing so the enemy gain on you and "
+    "your men.\n 100 armed soliders come from every angle "
+    "and attack.\n Your entire team are killed but you live.\n "
+    "You arrive home injured but alive and the guilt eats "
+    "you.\n You decide to never return to the Navy. \n")
     print("GAME OVER!")
     
 
@@ -72,11 +72,11 @@ def denied_go_safely_():
     This function presents the user with a question, with yes or no answers 
     then leading them to yet another question.
     """
-    print(Fore.GREEN  + "You obyed your orders from your Commander and"
-    " terminated the enemy. This is in complete violation"
-    " with the rules of engagement. Do you lie and tell"
-    " the head officer that your termination of the enemy"
-    " was purely retaliation?\n ")
+    print(Fore.GREEN  + "You obyed your orders from your Commander and "
+    "terminated the enemy.\n This is in complete violation "
+    "with the rules of engagement.\n Do you lie and tell "
+    "the head officer that your termination of the enemy "
+    "was purely retaliation?\n ")
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
@@ -93,11 +93,11 @@ def stay_at_compound():
     This function congratulates the user for their win on successfully
     completing the game, resulting in the win.
     """
-    print(Fore.GREEN  + "After deciding to stay, you soon realised"
-    " it was the right decision. After working another 6 months"
-    " over seas, you were offered a position to be a Commanding"
-    " Officer yet again. You return home to your family as"
-    " a Commanding Officer.")
+    print(Fore.GREEN  + "After deciding to stay, you soon realised "
+    "it was the right decision\n. After working another 6 months "
+    "over seas,\n you were offered a position to be a Commanding "
+    "Officer yet again.\n You return home to your family as "
+    "a Commanding Officer.")
     print("CONGRATULATIONS!! You have won the game!")
 
 
@@ -106,10 +106,10 @@ def bring_me_home():
     This function presents the user with their outcome of the game. 
     This lets them know their fate, and that the game is over.
     """
-    print(Fore.GREEN  + "Choosing to go home by spite of being striped"
-    " of your title, leads you to then"
-    " be discharged from the Navy. You now work"
-    " in Starbucks.\n")
+    print(Fore.GREEN  + "Choosing to go home in spite of being striped "
+    "of your title,\n leads you to then "
+    "be discharged from the Navy.\n "
+    "You now work in Starbucks.\n")
     print("GAME OVER!")
 
 
@@ -118,9 +118,9 @@ def tell_a_lie():
     This function presents the user with their outcome of the game. 
     This lets them know their fate, and that the game is over.
     """
-    print(Fore.GREEN  + "One of your team mates told the head of"
-    " operations that you attacked first. You have been"
-    " given a Military Discharge and sent home.\n")
+    print(Fore.GREEN  + "One of your team mates have gone to the head of "
+    "operations\n. They said that you attacked first. You have been "
+    "given a Military Discharge and sent home.\n")
     print("GAME OVER!")
 
 
@@ -129,9 +129,9 @@ def tell_the_truth():
     This function presents the user with a question, with yes or no answers 
     then leading them to yet another question.
     """
-    print(Fore.GREEN  + "You didn't lie and your honesty for the protection"
-    " of your men stopped you from being fired, but you are"
-    " striped of your title. Do you stay at the compound? \n")
+    print(Fore.GREEN  + "You didn't lie and your honesty for the protection "
+    "of your men\n had resulted in you not being fired,\n but you are "
+    "striped of your title. Do you stay at the compound? \n")
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
@@ -148,11 +148,11 @@ def evacuate_position():
     This function presents the user with their outcome of the game. 
     This lets them know their fate, and that the game is over.
     """
-    print(Fore.GREEN  + "You evacuate position, 100 men are gaining on you quickly,"
-    " you aren't quick enough you end up having to fight in their"
-    " forests where they have the advantage. You being"
-    " Commander of this op, have failed! You and your team"
-    " don't make it.\n")
+    print(Fore.GREEN  + "You evacuate position, 100 men are gaining on you quickly,\n "
+    "you aren't quick enough and you end up having to fight in their "
+    "forests. \n They have the advantage here. "
+    "You being Commander of this op, have failed!\n "
+    "You and your team don't make it.\n")
     print("GAME OVER!")
 
 
@@ -161,13 +161,13 @@ def stay_and_fight():
     This function presents the user with their outcome of the game. 
     This lets them know their fate, and that the game is over.
     """
-    print(Fore.GREEN  + "You chose to stay and fight. Taking the right steps to"
-    " call air-support gives yous an advantage. You take out most"
-    " of the enemy and the air-support does the rest. You and you"
-    " team arrive home injured but safe. Although your injuries lead"
-    " to you having to have both legs amputated which leads to"
-    " you never return to the Navy. You will never"
-    " again be called Commander again.\n")
+    print(Fore.GREEN  + "You chose to stay and fight.\n Taking the right steps to "
+    "call air-support gives yous an advantage.\n You take out most "
+    "of the enemy and the air-support does the rest.\n You and you "
+    "team arrive home injured but safe.\n Although your injuries lead "
+    "to you having to have both legs amputated\n which leads to "
+    "you never return to the Navy.\n You will never "
+    "again be called Commander again.\n")
     print("GAME OVER!")
 
 
@@ -176,11 +176,11 @@ def go_safely():
     This function presents the user with a question, with yes or no answers 
     then leading them to yet another question.
     """
-    print(Fore.GREEN  + "You chose to let the enemy go safely."
-    "They have told their army where you are"
-    " hiding and 100 armed soldiers are on their way"
-    " to you right now. Do you yes evacuate position"
-    " asap or no stay and fight, call air-support for backup! \n")
+    print(Fore.GREEN  + "You chose to let the enemy go safely.\n"
+    "They have told their army where you are hiding.\n"
+    "100 armed soldiers are on their way "
+    "to you right now.\n Do you 'yes' evacuate position "
+    "asap or .. \n 'no' stay and fight, call air-support for backup! \n")
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
@@ -197,7 +197,7 @@ def terminate():
     This function presents the user with a question, with yes or no answers 
     then leading them to yet another question.
     """
-    print(Fore.GREEN  + "You terminated the enemy which is in"
+    print(Fore.GREEN  + "You terminated the enemy!\n Which is in"
     " violation with rules of engagement."
     " Do you lie and say they attacked you and your team first? \n")
     options = ['1. yes', '2. no']
@@ -217,8 +217,8 @@ def accepted_position():
     then leading them to yet another question.
     """
     print(Fore.GREEN  + "The enemy just stumbled upon your"
-    " location and the op is compromised."
-    " Do you yes let the enemy go safely or no terminate? \n")
+    " location and the op is compromised.\n"
+    " Do you 'yes' let the enemy go safely or 'no' terminate? \n")
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
@@ -236,7 +236,7 @@ def denied_poistion():
     then leading them to yet another question.
     """
     print(Fore.GREEN  + "The enemy has came upon your location"
-    " and the op is compromised."
+    " and the op is compromised.\n"
     " Your commanding officer orders you to terminate"
     " the enemy. Do you obey your orders? \n")
     options = ['1. yes', '2. no']
@@ -255,9 +255,9 @@ def congratulations_commander():
     This function presents the user with a question, with yes or no answers 
     then leading them to yet another question.
     """
-    print(Fore.GREEN  + "Congratulations, you've been offered to"
+    print(Fore.GREEN  + "Congratulations,\n You've been offered to"
     " be the Commanding Officer of this"
-    " mission. Do you accept this position? \n")
+    " mission.\n Do you accept this position? \n")
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
@@ -274,7 +274,7 @@ def question_one():
     This function brings the user to the first question with yes or no answers,
     leading to the next question.
     """
-    print(Fore.GREEN + "You're being sent for deployment to Afghanistan."
+    print(Fore.GREEN + "You're being sent for deployment to Afghanistan.\n"
     " Do you leave your family and risk your life? \n")
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
@@ -289,14 +289,13 @@ def question_one():
 
 def print_instructions():
     """ This function will explain the instructions on how to play the game to the user """
-    print(Fore.GREEN + "\n In order to play this game you simply"
-    " need to use your UP and DOWN arrows,"
-    " typically located on the bottom right of your"
-    " keyboard. follow along with the questions"
-    " asked. Answer the questions that come up then answer"
-    " with the yes and no using the arrows,"
-    " then see if you have what it takes to be a Commanding"
-    " Officer in the Navy Seals! \n")
+    print(Fore.GREEN + "In order to play this game you simply \n"
+    "need to use your UP and DOWN arrows,\n"
+    "typically located on the bottom right of your keyboard.\n"
+    "follow along with the questions asked.\n"
+    "Answer the questions that come up then click yes or no using the arrows.\n"
+    "Do this to see if you have what it takes to be a\n"
+    "Officer in the Navy Seals! \n")
     options = ['1. Go back']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
