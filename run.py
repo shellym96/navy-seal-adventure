@@ -288,9 +288,9 @@ def print_instructions():
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
     options_choice = options[options_index]
-    if options_choice == '1. Start game':
+    if options_choice == '1. Go back':
 
-        start_game()
+        main()
 
 
 def start_game():
