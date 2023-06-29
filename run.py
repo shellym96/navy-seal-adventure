@@ -276,7 +276,7 @@ def question_one():
 
 def print_instructions():
     """ This function will explain the instructions on how to play the game to the user """
-    print('\033[32m' + "In order to play this game you simply" +
+    print('\033[32m' + "\n In order to play this game you simply" +
     " need to use your UP and DOWN arrows," +
     " typically located on the bottom right of your" +
     " keyboard. follow along with the questions" +
