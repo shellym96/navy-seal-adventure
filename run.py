@@ -36,7 +36,7 @@ def retaliation():
     print(Fore.GREEN  + "You lie to cover your back and say it was "
     "relatiation that made you termiate "
     "the enemy.\n There is an investigation launched "
-    "and for this reason you have been "
+    "and for this reason you have been \n "
     "discharged.\n")
     print("GAME OVER!")
 
@@ -75,7 +75,7 @@ def denied_go_safely_():
     print(Fore.GREEN  + "You obyed your orders from your Commander and "
     "terminated the enemy.\n This is in complete violation "
     "with the rules of engagement.\n Do you lie and tell "
-    "the head officer that your termination of the enemy "
+    "the head officer that your termination of the enemy \n "
     "was purely retaliation?\n ")
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
@@ -119,7 +119,7 @@ def tell_a_lie():
     This lets them know their fate, and that the game is over.
     """
     print(Fore.GREEN  + "One of your team mates have gone to the head of "
-    "operations\n. They said that you attacked first. You have been "
+    "operations\n. They said that you attacked first. \n You have been "
     "given a Military Discharge and sent home.\n")
     print("GAME OVER!")
 
@@ -198,7 +198,7 @@ def terminate():
     then leading them to yet another question.
     """
     print(Fore.GREEN  + "You terminated the enemy!\n Which is in"
-    " violation with rules of engagement."
+    " violation with rules of engagement.\n"
     " Do you lie and say they attacked you and your team first? \n")
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
@@ -235,10 +235,10 @@ def denied_poistion():
     This function presents the user with a question, with yes or no answers 
     then leading them to yet another question.
     """
-    print(Fore.GREEN  + "The enemy has came upon your location"
+    print(Fore.GREEN  + "Commander , the enemy has came upon your location"
     " and the op is compromised.\n"
     " Your commanding officer orders you to terminate"
-    " the enemy. Do you obey your orders? \n")
+    " the enemy. \n Do you obey your orders? \n")
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
