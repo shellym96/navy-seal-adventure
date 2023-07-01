@@ -312,7 +312,7 @@ def start_game():
         if not name.isalpha() or len(name) < 2 or len(name) > 8:
             print (f"{name} is invalid. Please enter 2-8 letters")
         else:
-            print(f"Welcome {name}!")
+            print(f"Welcome {name.capitalize()}!")
             break
     question_one()
 
