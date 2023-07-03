@@ -1,3 +1,7 @@
+from simple_term_menu import TerminalMenu
+from colorama import Fore, Back, Style
+
+
 user_results = {
     "tell_a_lie" : Fore.GREEN  + "One of your team mates have gone to the head of "
     "operations\n. They said that you attacked first. \n You have been "
