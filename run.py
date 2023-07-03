@@ -1,5 +1,6 @@
 from simple_term_menu import TerminalMenu
 from colorama import Fore, Back, Style
+from results import user_results
 
 
 def end_of_game():
@@ -118,10 +119,10 @@ def tell_a_lie():
     This function presents the user with their outcome of the game. 
     This lets them know their fate, and that the game is over.
     """
-    print(Fore.GREEN  + "One of your team mates have gone to the head of "
-    "operations\n. They said that you attacked first. \n You have been "
-    "given a Military Discharge and sent home.\n")
-    print("GAME OVER!")
+   # print(Fore.GREEN  + "One of your team mates have gone to the head of "
+    #"operations\n. They said that you attacked first. \n You have been "
+   # "given a Military Discharge and sent home.\n")
+   # print("GAME OVER!")
 
 
 def tell_the_truth():
