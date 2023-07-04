@@ -321,7 +321,7 @@ def start_game():
 
 
 def exit_game():
-    print("Thanks for playing! :) ")
+    print(Fore.GREEN + "Thanks for playing! :) ")
 
 
 def main():
@@ -344,7 +344,7 @@ def main():
         start_game()
     else: 
         exit_game()
-        print("Game ending")
+        print(Fore.GREEN + "Game ending")
 
 
 
