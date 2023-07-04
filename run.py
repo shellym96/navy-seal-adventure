@@ -9,8 +9,8 @@ def end_of_game():
     This lets them know their fate, and that the game is over.
     """
     print(Fore.GREEN  + "You have been discharged for not "
-    "following orders.\n Return to the home page "
-    "with the option to play again. \n")
+    "following orders.\n Go back to play again. \n")
+    go_back()
 
 
 def go_back():
@@ -33,7 +33,7 @@ def retaliation():
     "and for this reason you have been \n "
     "discharged.\n")
     print("GAME OVER!")
-    end_of_game()
+    go_back()
 
 
 def plead_the_fifth():
@@ -46,7 +46,7 @@ def plead_the_fifth():
     "Straight away you are sent home and fired."
     "You now work in starbucks.\n")
     print("GAME OVER!")
-    end_of_game()
+    go_back()
 
 
 def denied_terminate():
@@ -61,7 +61,7 @@ def denied_terminate():
     "You arrive home injured but alive and the guilt eats "
     "you.\n You decide to never return to the Navy. \n")
     print("GAME OVER!")
-    end_of_game()
+    go_back()
     
 
 def denied_go_safely_():
@@ -96,7 +96,7 @@ def stay_at_compound():
     "Officer yet again.\n You return home to your family as "
     "a Commanding Officer.")
     print("CONGRATULATIONS!! You have won the game!")
-    end_of_game()
+    go_back()
 
 
 def bring_me_home():
@@ -109,7 +109,7 @@ def bring_me_home():
     "be discharged from the Navy.\n "
     "You now work in Starbucks.\n")
     print("GAME OVER!")
-    end_of_game()
+    go_back()
 
 
 def tell_a_lie():
@@ -121,7 +121,7 @@ def tell_a_lie():
     "operations\n. They said that you attacked first. \n You have been "
     "given a Military Discharge and sent home.\n")
     print("GAME OVER!")
-    end_of_game()
+    go_back()
 
 
 def tell_the_truth():
@@ -154,7 +154,7 @@ def evacuate_position():
     "You being Commander of this op, have failed!\n "
     "You and your team don't make it.\n")
     print("GAME OVER!")
-    end_of_game()
+    go_back()
     
 
 
@@ -171,7 +171,7 @@ def stay_and_fight():
     "you never return to the Navy.\n You will never "
     "again be called Commander again.\n")
     print("GAME OVER!")
-    end_of_game()
+    go_back()
 
 
 def go_safely():
@@ -332,19 +332,17 @@ def main():
     """
     print(Fore.GREEN + "Welcome to your Navy Seal Adventure!")
     print("Choose one of the two options:")
-    options = ['1. instructions', '2. start the game', '3. exit game']
+    options = ['1. instructions', '2. start the game']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
     options_choice = options[options_index]
     if options_choice == '1. instructions':
 
         print_instructions()
-    elif options_choice =='2. start game':
 
-        start_game()
-    else: 
-        exit_game()
-        print(Fore.GREEN + "Game ending")
+    else:
+         options_choice =='2. start game'
+         start_game()
 
 
 
