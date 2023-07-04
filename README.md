@@ -31,39 +31,40 @@ While the features might be small, they bring it together nicely.
 
 ### Existing Features
 
-- **Welcome**
+- **Welcome with instructions/start**
 
     - The user is greeted with a 'Welcome to your Navy Seal Adventure!" which straight away brings the user in to that this is their adventure.
-![screenshot](documentation/feature01.png)
-
-- **Instructions/start**
-
     - The user is given the option of clicking instructions to be instructed on what they need to do, or they can click start and begin the game steaight away.
-
-![screenshot](documentation/feature02.png)
+![screenshot](documentation/feature01.png)
 
 - **Instructions**
 
     - Here the user is given the run down on what to do and how to play the game. They then have a 'Go Back' option which will bring them back to instructions or start game again.
 
-![screenshot](documentation/feature03.png)
+![screenshot](documentation/feature02.png)
 
 - **Start Game**
 
     - When the user starts the game they will be told the game is beginning and asked for their name. The user will need to enter 2-8 letters in their name or they will be greeted with an error to say that their name was invalid please enter 2-8 letters. 
 
-![screenshot](documentation/feature04.png)
+![screenshot](documentation/feature03.png)
 
 - **User Name**
 
-    - I have added that when a user types their name in all lower case letters, they will be greeted with their name capitalized. 
+    - I have added that when a user types their name in all lower case letters, they will be greeted with their name capitalized.
+
+![screenshot](documentation/feature04.png)
+
+- **Game**
+
+    -  With the game I have added complete line spaces between each separate print so it is easier for the user to read so it will not get mushed together and confusing for the user.
 
 ![screenshot](documentation/feature05.png)
 
 
 ### Future Features
 
-I would be interested in doing this project as a whole with html and css also added. To have background images and more involvement for the visual aspect.
+I would be interested in doing this project as a whole with HTML and CSS also added. To have background images and more involvement for the visual aspect.
 
 
 ## Tools & Technologies Used
@@ -186,15 +187,6 @@ You can fork this repository by using the following steps:
 
 ### Content
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to provide attribution links to any borrowed code snippets, elements, or resources.
-A few examples have been provided below to give you some ideas.
-
-Ideally, you should provide an actual link to every resource used, not just a generic link to the main site!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 | Source | Location | Notes |
 | --- | --- | --- |
 | [YouTube](https://www.youtube.com/watch?v=DEcFCn2ubSg) | Adventure game | to help guide me in the right direction on which way my code was taking. |
@@ -205,8 +197,8 @@ Ideally, you should provide an actual link to every resource used, not just a ge
 
 ### Acknowledgements
 
-I firstly would like to thank my new mentor Juliia,  having a new mentor assigned to me mid way through Python was nerve wracking but Juliia helped make me feel so confident. She really helped me learn a lot throughout this project and I am delighted with how much knowledge I have gained from doing this project.
-I feel very lucky to have had Tim as my first mentor and now Juliia, my knowlegde will continue.
+I firstly would like to thank my new mentor Juliia,  having a new mentor assigned to me mid way through Python was nerve wracking but Juliia helped make me feel so confident. She really helped me learn a lot throughout this project and I am delighted with how much knowledge I have gained from doing this.
+I feel very lucky to have had Tim as my first mentor and now Juliia, my knowlegde will continue to grow.
 
 - I would like to thank my new Code Institute mentor, [Juliia_mentor](https://github.com/IuliiaKonovalova) for her help and her dedicated time to push me to be better.
 - I would like to thank my past Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout my time so far on this journey.
