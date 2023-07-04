@@ -34,7 +34,7 @@ While the features might be small, they bring it together nicely.
 - **Welcome with instructions/start**
 
     - The user is greeted with a 'Welcome to your Navy Seal Adventure!" which straight away brings the user in to that this is their adventure.
-    - The user is given the option of clicking instructions to be instructed on what they need to do, or they can click start and begin the game steaight away.
+    - The user is given the option of clicking instructions to be instructed on what they need to do, or they can click start and begin the game straight away.
 ![screenshot](documentation/feature01.png)
 
 - **Instructions**
@@ -66,6 +66,8 @@ While the features might be small, they bring it together nicely.
 
 I would be interested in doing this project as a whole with HTML and CSS also added. To have background images and more involvement for the visual aspect.
 
+To add more design to the quesions as a whole, to be more imaginative with the length of the adventure and the type of questions.
+
 
 ## Tools & Technologies Used
 
@@ -77,8 +79,6 @@ I would be interested in doing this project as a whole with HTML and CSS also ad
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
 
-
-## Data Model
 
 ###  Functions
 
