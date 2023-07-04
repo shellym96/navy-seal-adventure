@@ -320,6 +320,10 @@ def start_game():
     question_one()
 
 
+def exit_game():
+    print("Thanks for playing! :) ")
+
+
 def main():
     """
     This function will greet the user to the game with a title,
