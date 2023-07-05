@@ -23,6 +23,21 @@ I thought this would bring the project together as the text font is quite milita
 
 Although the all over theme of military is serious in nature I wanted to add some bits of humor to to some of the results, to keep it light-hearted. 
 
+## User Stories
+
+- As a first time visitor I want to understand the purpose of the programme.
+- I would like the option of instructions to tell me how to play, and then an option to start the game after I have read the instructions.
+- I would appreciate the option to play the game straight away, if I didn't want to read the instructions.
+- I would prefer to have the game easy to navigate, rather than have to make too much effort typing answers.
+- To have questions short and sweet so I do not get bored while reading.
+- I would like to have the text in a colour so it is easy on the eyes to read.
+- I would like to have my interest peaked the the results of each question and answer revealed.
+
+### Frequent User Stories
+
+- As a frequent user I would appreciate the navigation system to be the same for each question so I know exactly what to do.
+- I would like to get a different outcome of the result, depending on how I feel that day if my answers would change would it result in a differen't outcome.
+
 
 ## Features
 
@@ -71,14 +86,18 @@ To add more design to the quesions as a whole, to be more imaginative with the l
 
 ## Tools & Technologies Used
 
+### Languages
 
 - [Python](https://www.python.org) used as the back-end programming language.
+
+
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
-- [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
-
+- [colorama](https://pypi.org/project/colorama/) used for adding colour to the text.
+- [os](https://docs.python.org/3/library/os.html) was used to clear the terminal before running the programme.
+- [simple terminal menu](https://pypi.org/project/simple-term-menu/) used to implement the menu.
 
 ###  Functions
 
@@ -90,6 +109,7 @@ To add more design to the quesions as a whole, to be more imaginative with the l
 I've used the following Python packages and/or external imported packages.
 
 - `colorama`: used for including color in the terminal
+- `simple terminal menu`: used to implement the menu
 
 
 ## Testing
