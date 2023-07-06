@@ -1,7 +1,7 @@
+import os
 from simple_term_menu import TerminalMenu
 from colorama import Fore, Back, Style
 from results import user_results
-os.system('cls' if os.name == 'nt' else 'clear')
 
 def end_of_game():
     """ 
