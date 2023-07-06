@@ -1,15 +1,14 @@
 from simple_term_menu import TerminalMenu
 from colorama import Fore, Back, Style
 from results import user_results
-
+os.system('cls' if os.name == 'nt' else 'clear')
 
 def end_of_game():
     """ 
     This function presents the user with their outcome of the game. 
     This lets them know their fate, and that the game is over.
     """
-    print(Fore.GREEN  + "You have been discharged for not "
-    "following orders.\n Go back to play again. \n")
+    print(Fore.GREEN  + user_results['end_of_game'])
     go_back()
 
 
@@ -27,12 +26,7 @@ def retaliation():
     This function presents the user with their outcome of the game. 
     This lets them know their fate, and that the game is over.
     """
-    print(Fore.GREEN  + "You lie to cover your back and say it was "
-    "relatiation that made you termiate "
-    "the enemy.\n There is an investigation launched "
-    "and for this reason you have been \n "
-    "discharged.\n")
-    print("GAME OVER!")
+    print(Fore.GREEN  + user_results['relatiation'])
     go_back()
 
 
@@ -41,11 +35,7 @@ def plead_the_fifth():
     This function presents the user with their outcome of the game. 
     This lets them know their fate, and that the game is over.
     """
-    print(Fore.GREEN  + "Pleading the fifth is definitely saying "
-    "your guilty without saying your guilty.\n "
-    "Straight away you are sent home and fired."
-    "You now work in starbucks.\n")
-    print("GAME OVER!")
+    print(Fore.GREEN  + user_results['plead_the_fifth'])
     go_back()
 
 
@@ -54,17 +44,11 @@ def denied_terminate():
     This function presents the user with their outcome of the game. 
     This lets them know their fate, and that the game is over.
     """
-    print(Fore.GREEN  + "You disobeyed you're orders to terminate "
-    "the enemy.\n In doing so the enemy gain on you and "
-    "your men.\n 100 armed soliders come from every angle "
-    "and attack.\n Your entire team are killed but you live.\n "
-    "You arrive home injured but alive and the guilt eats "
-    "you.\n You decide to never return to the Navy. \n")
-    print("GAME OVER!")
+    print(Fore.GREEN  + user_results['denied_terminate'])
     go_back()
     
 
-def denied_go_safely_():
+def denied_go_safely():
     """ 
     This function presents the user with a question, with yes or no answers 
     then leading them to yet another question.
@@ -90,12 +74,7 @@ def stay_at_compound():
     This function congratulates the user for their win on successfully
     completing the game, resulting in the win.
     """
-    print(Fore.GREEN  + "After deciding to stay, you soon realised "
-    "it was the right decision\n. After working another 6 months "
-    "over seas,\n you were offered a position to be a Commanding "
-    "Officer yet again.\n You return home to your family as "
-    "a Commanding Officer.")
-    print("CONGRATULATIONS!! You have won the game!")
+    print(Fore.GREEN  + user_results['stay_at_compound'])
     go_back()
 
 
@@ -104,11 +83,7 @@ def bring_me_home():
     This function presents the user with their outcome of the game. 
     This lets them know their fate, and that the game is over.
     """
-    print(Fore.GREEN  + "Choosing to go home in spite of being striped "
-    "of your title,\n leads you to then "
-    "be discharged from the Navy.\n "
-    "You now work in Starbucks.\n")
-    print("GAME OVER!")
+    print(Fore.GREEN  + user_results['bring_me_home'])
     go_back()
 
 
@@ -117,10 +92,7 @@ def tell_a_lie():
     This function presents the user with their outcome of the game. 
     This lets them know their fate, and that the game is over.
     """
-    print(Fore.GREEN  + "One of your team mates have gone to the head of "
-    "operations\n. They said that you attacked first. \n You have been "
-    "given a Military Discharge and sent home.\n")
-    print("GAME OVER!")
+    print(Fore.GREEN  + user_results['tell_a_lie'])
     go_back()
 
 
@@ -148,12 +120,7 @@ def evacuate_position():
     This function presents the user with their outcome of the game. 
     This lets them know their fate, and that the game is over.
     """
-    print(Fore.GREEN  + "You evacuate position, 100 men are gaining on you quickly,\n "
-    "you aren't quick enough and you end up having to fight in their "
-    "forests. \n They have the advantage here. "
-    "You being Commander of this op, have failed!\n "
-    "You and your team don't make it.\n")
-    print("GAME OVER!")
+    print(Fore.GREEN  + user_results['evacuate_position'])
     go_back()
     
 
@@ -163,14 +130,7 @@ def stay_and_fight():
     This function presents the user with their outcome of the game. 
     This lets them know their fate, and that the game is over.
     """
-    print(Fore.GREEN  + "You chose to stay and fight.\n Taking the right steps to "
-    "call air-support gives yous an advantage.\n You take out most "
-    "of the enemy and the air-support does the rest.\n You and you "
-    "team arrive home injured but safe.\n Although your injuries lead "
-    "to you having to have both legs amputated\n which leads to "
-    "you never return to the Navy.\n You will never "
-    "again be called Commander again.\n")
-    print("GAME OVER!")
+    print(Fore.GREEN  + user_results['stay_and_fight'])
     go_back()
 
 
@@ -248,7 +208,7 @@ def denied_position():
     options_choice = options[options_index]
     if options_choice == '1. yes':
 
-        denied_go_safely_()
+        denied_go_safely()
     else:
         denied_terminate()
 
