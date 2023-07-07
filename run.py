@@ -19,7 +19,7 @@ def go_back():
     options_index = main_menu.show()
     options_choice = options[options_index]
     if options_choice == 'Go back':
-        ''' 
+        '''
         clears terminal after go back is clicked,
         leaving the welcome message and options menu available
         '''
