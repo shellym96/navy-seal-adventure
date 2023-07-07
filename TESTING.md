@@ -13,7 +13,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
 | run.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shellym96/navy-seal-adventure/main/run.py) | ![screenshot](documentation/pep8_run.py.png) | Pass - No Errors |
-| results.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shellym96/navy-seal-adventure/main/boutique-ado/settings.py) | ![screenshot](documentation/results.py.png) | Pass - No Errors ||
+| results.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shellym96/navy-seal-adventure/main/boutique-ado/settings.py) | ![screenshot](documentation/pep8_results.py.png) | Pass - No Errors ||
 
 ## Browser Compatibility
 
@@ -30,7 +30,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 ## Manual Testing
 
 | Page | User Action | Expected Result | Notes |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | Welcome | Run Programme | Greets user and gives user two options of instructions and start game | Works |
 | Instructions | Use enter key | Tells the user the instructions on how to play the game | Works |
 | Go Back Option | Use enter key | Bring user back to options of instructions and start game | Works |
@@ -46,7 +46,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 
 | Bug | Comments | Status |
-| --- | --- |
+| --- | --- | --- |
 | Go Back | When adding the go back method, I had used to wrong function which resulted in the end_of_game printing. This was fixed when I realized I had used the wrong function | Fixed |
 | Colorama | When adding the green to the text I firstly had to use numbers to get the colour green, but once I added the package to the top of my code it worked perfectly as Fore.GREEN for better practice. | Fixed |
 | Exit Game | When adding an exit game function it broke my code, and the print statement would print even when trying to just start the game | Unfixed |
