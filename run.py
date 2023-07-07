@@ -177,32 +177,14 @@ def terminate():
         tell_a_lie()
     else:
         tell_the_truth()
-        
-def denied_position():
-    """
-    This function presents the user with a question, with yes or no answers
-    then leading them to yet another question.
-    """
-    print(Fore.GREEN + "Commander , the enemy has came upon your location"
-    " and the op is compromised.\n"
-    " Your commanding officer orders you to terminate"
-    " the enemy. \n Do you obey your orders? \n")
-    options = ['1. yes', '2. no']
-    main_menu = TerminalMenu(options)
-    options_index = main_menu.show()
-    options_choice = options[options_index]
-    if options_choice == '1. yes':
 
-        denied_go_safely()
-    else:
-        denied_terminate()
 
 def accepted_position():
     """
     This function presents the user with a question, with yes or no answers
     then leading them to yet another question.
     """
-    print(Fore.GREEN + "The enemy just stumbled upon your"
+    print(Fore.GREEN + "Commander, the enemy just stumbled upon your"
     " location and the op is compromised.\n"
     " Do you 'yes' let the enemy go safely or 'no' terminate? \n")
     options = ['1. yes', '2. no']
@@ -216,15 +198,32 @@ def accepted_position():
         terminate()
 
 
-
-
-
-def congratulations_commander(name):
+def denied_position():
     """
     This function presents the user with a question, with yes or no answers
     then leading them to yet another question.
     """
-    print(Fore.GREEN + "Congratulations" + name + ",\n You've been offered to"
+    print(Fore.GREEN + "The enemy has came upon your location"
+    " and the op is compromised.\n"
+    " Your commanding officer orders you to terminate"
+    " the enemy. \n Do you obey your orders? \n")
+    options = ['1. yes', '2. no']
+    main_menu = TerminalMenu(options)
+    options_index = main_menu.show()
+    options_choice = options[options_index]
+    if options_choice == '1. yes':
+
+        denied_go_safely()
+    else:
+        denied_terminate()
+
+
+def congratulations_commander():
+    """
+    This function presents the user with a question, with yes or no answers
+    then leading them to yet another question.
+    """
+    print(Fore.GREEN + "Congratulations,\n You've been offered to"
     " be the Commanding Officer of this"
     " mission.\n Do you accept this position? \n")
     options = ['1. yes', '2. no']
@@ -233,17 +232,17 @@ def congratulations_commander(name):
     options_choice = options[options_index]
     if options_choice == '1. yes':
 
-        denied_position()
-    else:
         accepted_position()
+    else:
+        denied_position()
 
 
-def question_one(name):
+def question_one():
     """
     This function brings the user to the first question with yes or no answers,
     leading to the next question.
     """
-    print(Fore.GREEN + name.capitalize() +  ",You're being sent for deployment to Afghanistan.\n"
+    print(Fore.GREEN + "You're being sent for deployment to Afghanistan.\n"
     " Do you leave your family and risk your life? \n")
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
@@ -251,7 +250,7 @@ def question_one(name):
     options_choice = options[options_index]
     if options_choice == '1. yes':
 
-        congratulations_commander(name)
+        congratulations_commander()
     else:
         end_of_game()
 
@@ -287,7 +286,7 @@ def start_game():
         else:
             print(f"Welcome {name.capitalize()}!")
             break
-    question_one(name)
+    question_one()
 
 
 def exit_game():
