@@ -19,6 +19,11 @@ def go_back():
     options_index = main_menu.show()
     options_choice = options[options_index]
     if options_choice == 'Go back':
+        ''' 
+        clears terminal after go back is clicked,
+        leaving the welcome message and options menu available
+        '''
+        os.system('cls' if os.name == 'nt' else 'clear')
         main()
 
 
@@ -307,8 +312,8 @@ def main():
         print_instructions()
 
     else:
-        options_choice == '2. start game':
-            start_game()
+        options_choice == '2. start game'
+        start_game()
 
 
 main()
