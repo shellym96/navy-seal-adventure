@@ -5,7 +5,7 @@ from colorama import Fore, Back, Style
 user_results = {
     "end_of_game":
     ("You have been discharged for not"
-    "following orders.\n Go back to play again. \n"),
+    " following orders.\n Go back to play again. \n"),
 
     "relatiation":
     ("You lie to cover your back and say it was "
