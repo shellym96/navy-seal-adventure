@@ -86,5 +86,77 @@ user_results = {
         "you never return to the Navy.\n You will never "
         "again be called Commander again.\n"
         "GAME OVER! YOU LOSE."
+    ),
+
+    "print_instructions":
+    (
+        "In order to play this game you simply \n"
+        "need to use your UP and DOWN arrows,\n"
+        "typically located on the bottom right of your keyboard.\n"
+        "follow along with the questions asked.\n"
+        "Answer the questions that come up then"
+        "click yes or no using the arrows.\n"
+        "Do this to see if you have what it takes to be a\n"
+        "Officer in the Navy Seals! \n"
+    ),
+
+    "question_one":
+    (
+        "You're being sent for deployment to Afghanistan.\n"
+        " Do you leave your family and risk your life? \n"
+    ),
+
+    "congratulations_commander":
+    (
+        "Congratulations,\n You've been offered to"
+        " be the Commanding Officer of this"
+        " mission.\n Do you accept this position? \n"
+    ),
+
+    "denied_position":
+    (
+        "The enemy has came upon your location"
+        " and the op is compromised.\n"
+        " Your commanding officer orders you to terminate"
+        " the enemy. \n Do you obey your orders? \n"
+    ),
+
+    "accepted_position":
+    (
+        "Commander, the enemy just stumbled upon your"
+        " location and the op is compromised.\n"
+        " Do you 'yes' let the enemy go safely or 'no' terminate? \n"
+    ),
+
+    "terminate":
+    (
+        "You terminated the enemy!\n Which is in"
+        " violation with rules of engagement.\n"
+        " Do you lie and say they attacked you and your team first? \n"
+    ),
+
+    "go_safely":
+    (
+        "You chose to let the enemy go safely.\n"
+        "They have told their army where you are hiding.\n"
+        "100 armed soldiers are on their way "
+        "to you right now.\n Do you 'yes' evacuate position "
+        "asap or .. \n 'no' stay and fight, call air-support for backup! \n"
+    ),
+
+    "tell_the_truth":
+    (
+        "You didn't lie and your honesty for the protection "
+        "of your men\n had resulted in you not being fired,\n but you are "
+        "striped of your title. Do you stay at the compound? \n"
+    ),
+
+    "denied_go_safely":
+    (
+        "You obyed your orders from your Commander and "
+        "terminated the enemy.\n This is in complete violation "
+        "with the rules of engagement.\n Do you lie and tell "
+        "the head officer that your termination of the enemy \n "
+        "was purely retaliation?\n "
     )
 }
