@@ -61,7 +61,7 @@ user_results = {
     "tell_a_lie":
     (
         "One of your team mates have gone to the head of "
-        "operations\n. They said that you attacked first. \n You have been "
+        "operations.\n They said that you attacked first. \n You have been "
         "given a Military Discharge and sent home.\n"
         "GAME OVER! YOU LOSE."
     ),
@@ -93,11 +93,11 @@ user_results = {
         "In order to play this game you simply \n"
         "need to use your UP and DOWN arrows,\n"
         "typically located on the bottom right of your keyboard.\n"
-        "follow along with the questions asked.\n"
-        "Answer the questions that come up then"
+        "Follow along with the questions asked.\n"
+        "Answer the questions that come up then "
         "click yes or no using the arrows.\n"
         "Do this to see if you have what it takes to be a\n"
-        "Officer in the Navy Seals! \n"
+        "Officer or Commanding Officer in the Navy Seals!\n"
     ),
 
     "question_one":
