@@ -96,12 +96,15 @@ To add more design to the quesions as a whole, to be more imaginative with the l
 
 ### Third Party Packages
 
+- [colorama](https://pypi.org/project/colorama/) used for adding colour to the text.
+- [simple terminal menu](https://pypi.org/project/simple-term-menu/) used to implement the menu.
+
+### Others 
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
-- [colorama](https://pypi.org/project/colorama/) used for adding colour to the text.
-- [simple terminal menu](https://pypi.org/project/simple-term-menu/) used to implement the menu.
+
 
 ###  Functions
 
