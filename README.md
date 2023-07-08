@@ -86,17 +86,21 @@ To add more design to the quesions as a whole, to be more imaginative with the l
 
 ## Tools & Technologies Used
 
-### Languages
+### Language
 
 - [Python](https://www.python.org) used as the back-end programming language.
 
+### Python packages
+
+- [os](https://docs.python.org/3/library/os.html) was used to clear the terminal before running the programme.
+
+### Third Party Packages
 
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
 - [colorama](https://pypi.org/project/colorama/) used for adding colour to the text.
-- [os](https://docs.python.org/3/library/os.html) was used to clear the terminal before running the programme.
 - [simple terminal menu](https://pypi.org/project/simple-term-menu/) used to implement the menu.
 
 ###  Functions
