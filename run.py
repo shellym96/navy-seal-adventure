@@ -14,15 +14,17 @@ def end_of_game():
 
 
 def go_back():
+    '''
+    Brings user back to the start of the game.
+    os.system below clears terminal after go back is clicked,
+    leaving the welcome message and options menu available
+    '''
     options = ['Go back', ]
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
     options_choice = options[options_index]
     if options_choice == 'Go back':
-        '''
-        clears terminal after go back is clicked,
-        leaving the welcome message and options menu available
-        '''
+      
         os.system('cls' if os.name == 'nt' else 'clear')
         main()
 
@@ -59,11 +61,7 @@ def denied_go_safely():
     This function presents the user with a question, with yes or no answers
     then leading them to yet another question.
     """
-    print(Fore.GREEN + "You obyed your orders from your Commander and "
-    "terminated the enemy.\n This is in complete violation "
-    "with the rules of engagement.\n Do you lie and tell "
-    "the head officer that your termination of the enemy \n "
-    "was purely retaliation?\n ")
+    print(Fore.GREEN + user_results['denied_go_safely'])
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
@@ -107,9 +105,7 @@ def tell_the_truth():
     This function presents the user with a question, with yes or no answers
     then leading them to yet another question.
     """
-    print(Fore.GREEN + "You didn't lie and your honesty for the protection "
-    "of your men\n had resulted in you not being fired,\n but you are "
-    "striped of your title. Do you stay at the compound? \n")
+    print(Fore.GREEN + user_results['tell_the_truth'])
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
@@ -144,11 +140,7 @@ def go_safely():
     This function presents the user with a question, with yes or no answers
     then leading them to yet another question.
     """
-    print(Fore.GREEN + "You chose to let the enemy go safely.\n"
-    "They have told their army where you are hiding.\n"
-    "100 armed soldiers are on their way "
-    "to you right now.\n Do you 'yes' evacuate position "
-    "asap or .. \n 'no' stay and fight, call air-support for backup! \n")
+    print(Fore.GREEN + user_results['go_safely'])
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
@@ -165,9 +157,7 @@ def terminate():
     This function presents the user with a question, with yes or no answers
     then leading them to yet another question.
     """
-    print(Fore.GREEN + "You terminated the enemy!\n Which is in"
-    " violation with rules of engagement.\n"
-    " Do you lie and say they attacked you and your team first? \n")
+    print(Fore.GREEN + user_results['terminate'])
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
@@ -184,9 +174,7 @@ def accepted_position():
     This function presents the user with a question, with yes or no answers
     then leading them to yet another question.
     """
-    print(Fore.GREEN + "Commander, the enemy just stumbled upon your"
-    " location and the op is compromised.\n"
-    " Do you 'yes' let the enemy go safely or 'no' terminate? \n")
+    print(Fore.GREEN + user_results['accepted_position'])
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
@@ -203,10 +191,7 @@ def denied_position():
     This function presents the user with a question, with yes or no answers
     then leading them to yet another question.
     """
-    print(Fore.GREEN + "The enemy has came upon your location"
-    " and the op is compromised.\n"
-    " Your commanding officer orders you to terminate"
-    " the enemy. \n Do you obey your orders? \n")
+    print(Fore.GREEN + user_results['denied_position'])
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
@@ -223,9 +208,7 @@ def congratulations_commander():
     This function presents the user with a question, with yes or no answers
     then leading them to yet another question.
     """
-    print(Fore.GREEN + "Congratulations,\n You've been offered to"
-    " be the Commanding Officer of this"
-    " mission.\n Do you accept this position? \n")
+    print(Fore.GREEN + user_results['congratulations_commander'])
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
@@ -242,8 +225,7 @@ def question_one():
     This function brings the user to the first question with yes or no answers,
     leading to the next question.
     """
-    print(Fore.GREEN + "You're being sent for deployment to Afghanistan.\n"
-    " Do you leave your family and risk your life? \n")
+    print(Fore.GREEN + user_results['question_one'])
     options = ['1. yes', '2. no']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
@@ -260,14 +242,7 @@ def print_instructions():
     This function will explain the instructions
     on how to play the game to the user.
     """
-    print(Fore.GREEN + "In order to play this game you simply \n"
-    "need to use your UP and DOWN arrows,\n"
-    "typically located on the bottom right of your keyboard.\n"
-    "follow along with the questions asked.\n"
-    "Answer the questions that come up then"
-    "click yes or no using the arrows.\n"
-    "Do this to see if you have what it takes to be a\n"
-    "Officer in the Navy Seals! \n")
+    print(Fore.GREEN + user_results['print_instructions'])
     options = ['1. Go back']
     main_menu = TerminalMenu(options)
     options_index = main_menu.show()
@@ -287,10 +262,6 @@ def start_game():
             print(f"Welcome {name.capitalize()}!")
             break
     question_one()
-
-
-def exit_game():
-    print(Fore.GREEN + "Thanks for playing! :) ")
 
 
 def main():
